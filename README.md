@@ -74,25 +74,22 @@ Helps identify typical hospital stays, variation in lab testing, and outliers fo
 Pivot tables to explore:
 
 Readmissions by diagnosis
-<img width="1084" height="455" alt="image" src="https://github.com/user-attachments/assets/34b89b58-c5a3-4fca-8c3e-83c349305667" />
+<img width="375" height="235" alt="image" src="https://github.com/user-attachments/assets/2f125a3c-7e8f-43bd-bb41-5bd3f371bf5d" />
 
+Average length of stay by age group <img width="477" height="291" alt="image" src="https://github.com/user-attachments/assets/65a0bb72-bac8-4894-9638-d3e0dc02e69c" />
 
-Average length of stay by age group <img width="609" height="656" alt="image" src="https://github.com/user-attachments/assets/ba8ceef4-ecf7-4bca-a444-702c11c9d03d" />
+Medication counts by medical specialty <img width="376" height="261" alt="image" src="https://github.com/user-attachments/assets/e80862c0-f249-4392-96d0-20325b09e7b4" />
 
-
-Medication counts by medical specialty <img width="414" height="270" alt="image" src="https://github.com/user-attachments/assets/98e23c1e-4b48-4d03-8922-1285aca59502" />
-
-
-Impact of medication changes on readmissions <img width="681" height="638" alt="image" src="https://github.com/user-attachments/assets/f7e38637-6e2b-4aef-b3d7-8d53fab73408" />
-
+Impact of medication changes on readmissions <img width="519" height="248" alt="image" src="https://github.com/user-attachments/assets/436ec895-5031-4f57-abc3-d09d9d7d41e3" />
 
 # 4. Visualizations
 
-Bar charts for top diagnoses with highest readmissions 
+Bar charts for top diagnoses with highest readmissions <img width="659" height="357" alt="image" src="https://github.com/user-attachments/assets/3ddb0620-a817-43f3-a321-ecc14d256246" />
 
-Stacked bar charts by age group and readmission
+Stacked bar charts by age group and readmission <img width="690" height="380" alt="image" src="https://github.com/user-attachments/assets/2f17e491-f668-447e-91c5-cd9c5333374a" />
 
-Heatmap: readmissions by age and medical specialty
+Heatmap: readmissions by age and medical specialty <img width="202" height="184" alt="image" src="https://github.com/user-attachments/assets/108af8a5-7c4c-46cd-9699-f20dbd83b387" />
+
 
 # 5. Scenario Modeling (What-If Analysis)
 
@@ -104,7 +101,7 @@ Reduction Factor	Reduction %
 1.00	basline
 0.95	5%
 0.85	15%
-0.90	10%
+0.90	10% <img width="590" height="188" alt="image" src="https://github.com/user-attachments/assets/888f6030-b762-4228-bebc-ff9ff681faef" />
 
 Formula: Adjusted_Readmission = Readmission_Flag × Reduction_Factor
 
