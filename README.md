@@ -8,66 +8,60 @@ This project analyzes hospital patient data to identify factors influencing hosp
 
 Using Microsoft Excel, the project demonstrates:
 
-Data cleaning and transformation
+- Data cleaning and transformation
 
-Exploratory analysis with pivot tables
+- Exploratory analysis with pivot tables
 
-Visualizations (bar charts, stacked bars, heatmaps)
+- Visualizations (bar charts, stacked bars, heatmaps)
 
-Scenario modeling / What-If Analysis to estimate reductions in readmissions
+- Scenario modeling / What-If Analysis to estimate reductions in readmissions
 
-This project highlights healthcare analytics, forecasting, and data-driven decision-making skills.
+- This project highlights healthcare analytics, forecasting, and data-driven decision-making skills.
 
-Dataset
-
-The dataset used in this project is publicly available on Kaggle:
-Hospital Readmissions Dataset – Dubradave https://www.kaggle.com/datasets/dubradave/hospital-readmissions
+# Dataset
+- The dataset used in this project is publicly available on Kaggle:
+- Hospital Readmissions Dataset – Dubradave https://www.kaggle.com/datasets/dubradave/hospital-readmissions
 
 Note: The data is anonymized and used for educational and analytical purposes. No personal patient information is included.
 
 The dataset contains anonymized hospital patient records. Each row represents a patient visit.
 
-Column	Description
-age	Patient age group ([50-60), [60-70), etc.)
-time_in_hospital	Length of hospital stay (days)
-n_lab_procedures	Number of laboratory procedures performed
-n_procedures	Number of procedures performed during the visit
-n_medications	Number of medications administered
-n_outpatient	Outpatient visits in the prior year
-n_inpatient	Inpatient visits in the prior year
-n_emergency	ER visits in the prior year
-medical_specialty	Treating physician specialty
-diag_1, diag_2, diag_3	Diagnoses
-glucose_test, A1Ctest	Test results (high/normal/not performed)
-change	Whether medication was changed (yes/no)
-diabetes_med	Whether diabetes medication was prescribed (yes/no)
-readmitted	Whether the patient was readmitted (yes/no)
-Methods
+# Column	Description
+- age	Patient age group ([50-60), [60-70), etc.)
+- time_in_hospital	Length of hospital stay (days)
+- n_lab_procedures	Number of laboratory procedures performed
+- n_procedures	Number of procedures performed during the visit
+- n_medications	Number of medications administered
+- n_outpatient	Outpatient visits in the prior year
+- n_inpatient	Inpatient visits in the prior year
+- n_emergency	ER visits in the prior year
+- medical_specialty	Treating physician specialty
+- diag_1, diag_2, diag_3	Diagnoses
+- glucose_test, A1Ctest	Test results (high/normal/not performed)
+- change	Whether medication was changed (yes/no)
+- diabetes_med	Whether diabetes medication was prescribed (yes/no)
+- readmitted	Whether the patient was readmitted (yes/no)
+## Methods
 # 1. Data Cleaning
 
-Standardized age groups
+- Standardized age groups
 
-Converted categorical values to numeric flags where necessary (e.g., readmission_count)
+- Converted categorical values to numeric flags where necessary (e.g., readmission_count)
 
-Created calculated columns (e.g., total_procedures = n_lab_procedures + n_procedures, total visit = n_outpatient + n_inpatient + n_emergency)
+- Created calculated columns (e.g., total_procedures = n_lab_procedures + n_procedures, total visit = n_outpatient + n_inpatient + n_emergency)
 
 # 2. Descriptive Statistics
 
 Calculated summary statistics for key numeric columns:
+- time_in_hospital (length of stay)
+- n_lab_procedures (number of lab tests)
 
-time_in_hospital (length of stay)
-
-n_lab_procedures (number of lab tests)
-
-Metrics included:
+# Metrics included:
 
 Mean, Median, Minimum, Maximum
-
 Standard Deviation
-
 Count / Distribution
-
-Helps identify typical hospital stays, variation in lab testing, and outliers for further analysis
+# Helps identify typical hospital stays, variation in lab testing, and outliers for further analysis
 
 # 3. Exploratory Analysis
 
@@ -93,7 +87,7 @@ Heatmap: readmissions by age and medical specialty <img width="202" height="184"
 
 # 5. Scenario Modeling (What-If Analysis)
 
-Simulated reductions in readmissions using Data Tables
+- Simulated reductions in readmissions using Data Tables
 
 Example reduction factors:
 
@@ -110,34 +104,34 @@ Shows potential improvements in patient outcomes and reduced readmission.
 # 6. Key insights
 ## 1. Readmissions by Diagnosis
 
-Patients with Circulatory, Respiratory, and “Other” diagnoses have the highest readmission rates.
+- Patients with Circulatory, Respiratory, and “Other” diagnoses have the highest readmission rates.
 
 Targeted interventions for these groups could reduce hospital readmissions and improve patient outcomes.
 
 ## 2. Average Hospital Stay by Age Group
 
-Older patients tend to stay slightly longer in the hospital.
+- Older patients tend to stay slightly longer in the hospital.
 
-Patients who were readmitted generally had longer hospital stays, suggesting a potential correlation between length of stay and readmission risk.
+- Patients who were readmitted generally had longer hospital stays, suggesting a potential correlation between length of stay and readmission risk.
 
 ## 3. Medication Counts by Physician Specialty
 
-Surgery prescribes the highest average number of medications per patient.
+- Surgery prescribes the highest average number of medications per patient.
 
-Emergency/Trauma and Family Practice prescribe fewer medications on average.
+- Emergency/Trauma and Family Practice prescribe fewer medications on average.
 
-Understanding prescription patterns can help standardize care and manage medication-related readmission risk.
+- Understanding prescription patterns can help standardize care and manage medication-related readmission risk.
 
 ## 4. Effect of Medication Changes on Readmissions
 
-Patients who had their diabetes medication changed and were prescribed a diabetes med have the highest readmissions.
+- Patients who had their diabetes medication changed and were prescribed a diabetes med have the highest readmissions.
 
-Careful monitoring and personalized medication adjustments could potentially lower readmission rates.
+- Careful monitoring and personalized medication adjustments could potentially lower readmission rates.
 
 ## 5. Scenario Modeling / What-If Analysis
 
-Reducing readmission rates through intervention strategies (e.g., medication management) can be quantified using reduction factors.
+- Reducing readmission rates through intervention strategies (e.g., medication management) can be quantified using reduction factors.
 
 Example: A 5% reduction factor decreases expected readmissions slightly, while larger reduction factors (42% or 75%) demonstrate the potential for significant improvement.
 
-Scenario modeling highlights the impact of strategic decisions on patient outcomes and hospital efficiency.
+- Scenario modeling highlights the impact of strategic decisions on patient outcomes and hospital efficiency.
