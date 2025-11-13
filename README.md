@@ -55,12 +55,9 @@ The dataset contains anonymized hospital patient records. Each row represents a 
 Calculated summary statistics for key numeric columns:
 - time_in_hospital (length of stay)
 - n_lab_procedures (number of lab tests)
+<img width="463" height="391" alt="image" src="https://github.com/user-attachments/assets/47577d6d-20bd-46b2-9355-133663a964fe" />
 
-# Metrics included:
 
-Mean, Median, Minimum, Maximum
-Standard Deviation
-Count / Distribution
 # Helps identify typical hospital stays, variation in lab testing, and outliers for further analysis
 
 # 3. Exploratory Analysis
